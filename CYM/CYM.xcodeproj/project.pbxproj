@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64C2D9172BFF70E5009A3EE5 /* CYMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9162BFF70E5009A3EE5 /* CYMApp.swift */; };
+		64C2D9192BFF70E5009A3EE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9182BFF70E5009A3EE5 /* ContentView.swift */; };
+		64C2D91B2BFF70E6009A3EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2D91A2BFF70E6009A3EE5 /* Assets.xcassets */; };
+		64C2D91E2BFF70E6009A3EE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2D91D2BFF70E6009A3EE5 /* Preview Assets.xcassets */; };
+		64C2D92B2BFF7121009A3EE5 /* CYM_SensoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D92A2BFF7121009A3EE5 /* CYM_SensoryApp.swift */; };
+		64C2D92D2BFF7121009A3EE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D92C2BFF7121009A3EE5 /* ContentView.swift */; };
+		64C2D92F2BFF7122009A3EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2D92E2BFF7122009A3EE5 /* Assets.xcassets */; };
+		64C2D9322BFF7122009A3EE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2D9312BFF7122009A3EE5 /* Preview Assets.xcassets */; };
+		64C2D9352BFF7122009A3EE5 /* CYM Sensory Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 64C2D9282BFF7121009A3EE5 /* CYM Sensory Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64C2D93C2BFF71E3009A3EE5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C2D93B2BFF71E3009A3EE5 /* HealthKit.framework */; };
+		64C2D93E2BFF7280009A3EE5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C2D93D2BFF7280009A3EE5 /* HealthKit.framework */; };
+		64C2D9422BFF7811009A3EE5 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9412BFF7811009A3EE5 /* WatchConnector.swift */; };
+		64C2D9442BFF7871009A3EE5 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C2D9432BFF7871009A3EE5 /* WatchConnectivity.framework */; };
+		64C2D9462BFF7AB0009A3EE5 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9452BFF7AB0009A3EE5 /* PhoneConnector.swift */; };
+		64C2D9482BFF8BBD009A3EE5 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9472BFF8BBD009A3EE5 /* OpenAIService.swift */; };
+		64C2D94A2BFF8F7A009A3EE5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9492BFF8F7A009A3EE5 /* Secrets.swift */; };
+		64C2D94C2C00D9EB009A3EE5 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D94B2C00D9EB009A3EE5 /* RequestModels.swift */; };
+		64C2D94E2C048092009A3EE5 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D94D2C048092009A3EE5 /* ResponseModels.swift */; };
+		64C2D94F2C04AB7B009A3EE5 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9472BFF8BBD009A3EE5 /* OpenAIService.swift */; };
+		64C2D9502C04AB7B009A3EE5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9492BFF8F7A009A3EE5 /* Secrets.swift */; };
+		64C2D9512C04AB7B009A3EE5 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D94B2C00D9EB009A3EE5 /* RequestModels.swift */; };
+		64C2D9522C04AB7B009A3EE5 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D94D2C048092009A3EE5 /* ResponseModels.swift */; };
+		64C2D9562C04CE57009A3EE5 /* VitalDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2D9552C04CE57009A3EE5 /* VitalDataCollector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64C2D9332BFF7122009A3EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C2D90B2BFF70E5009A3EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64C2D9272BFF7121009A3EE5;
+			remoteInfo = "CYM Sensory Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64C2D9392BFF7122009A3EE5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				64C2D9352BFF7122009A3EE5 /* CYM Sensory Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		646A42272C1200A000AEEBC3 /* MoodiSense-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MoodiSense-Info.plist"; sourceTree = "<group>"; };
+		64C2D9132BFF70E5009A3EE5 /* MoodiSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodiSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C2D9162BFF70E5009A3EE5 /* CYMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYMApp.swift; sourceTree = "<group>"; };
+		64C2D9182BFF70E5009A3EE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64C2D91A2BFF70E6009A3EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64C2D91D2BFF70E6009A3EE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64C2D9282BFF7121009A3EE5 /* CYM Sensory Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CYM Sensory Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C2D92A2BFF7121009A3EE5 /* CYM_SensoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYM_SensoryApp.swift; sourceTree = "<group>"; };
+		64C2D92C2BFF7121009A3EE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64C2D92E2BFF7122009A3EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64C2D9312BFF7122009A3EE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64C2D93B2BFF71E3009A3EE5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		64C2D93D2BFF7280009A3EE5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		64C2D93F2BFF744F009A3EE5 /* CYM-Sensory-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CYM-Sensory-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		64C2D9402BFF7589009A3EE5 /* CYM Sensory Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CYM Sensory Watch App.entitlements"; sourceTree = "<group>"; };
+		64C2D9412BFF7811009A3EE5 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		64C2D9432BFF7871009A3EE5 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		64C2D9452BFF7AB0009A3EE5 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
+		64C2D9472BFF8BBD009A3EE5 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		64C2D9492BFF8F7A009A3EE5 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		64C2D94B2C00D9EB009A3EE5 /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
+		64C2D94D2C048092009A3EE5 /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
+		64C2D9552C04CE57009A3EE5 /* VitalDataCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalDataCollector.swift; sourceTree = "<group>"; };
+		64C2D9572C05CB60009A3EE5 /* CYM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CYM.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64C2D9102BFF70E5009A3EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C2D93E2BFF7280009A3EE5 /* HealthKit.framework in Frameworks */,
+				64C2D9442BFF7871009A3EE5 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C2D9252BFF7121009A3EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C2D93C2BFF71E3009A3EE5 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64C2D90A2BFF70E5009A3EE5 = {
+			isa = PBXGroup;
+			children = (
+				646A42272C1200A000AEEBC3 /* MoodiSense-Info.plist */,
+				64C2D9152BFF70E5009A3EE5 /* CYM */,
+				64C2D9292BFF7121009A3EE5 /* CYM Sensory Watch App */,
+				64C2D9142BFF70E5009A3EE5 /* Products */,
+				64C2D93A2BFF71E3009A3EE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64C2D9142BFF70E5009A3EE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64C2D9132BFF70E5009A3EE5 /* MoodiSense.app */,
+				64C2D9282BFF7121009A3EE5 /* CYM Sensory Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64C2D9152BFF70E5009A3EE5 /* CYM */ = {
+			isa = PBXGroup;
+			children = (
+				64C2D9572C05CB60009A3EE5 /* CYM.entitlements */,
+				64C2D9162BFF70E5009A3EE5 /* CYMApp.swift */,
+				64C2D9182BFF70E5009A3EE5 /* ContentView.swift */,
+				64C2D91A2BFF70E6009A3EE5 /* Assets.xcassets */,
+				64C2D91C2BFF70E6009A3EE5 /* Preview Content */,
+				64C2D9412BFF7811009A3EE5 /* WatchConnector.swift */,
+				64C2D9472BFF8BBD009A3EE5 /* OpenAIService.swift */,
+				64C2D9492BFF8F7A009A3EE5 /* Secrets.swift */,
+				64C2D94B2C00D9EB009A3EE5 /* RequestModels.swift */,
+				64C2D94D2C048092009A3EE5 /* ResponseModels.swift */,
+			);
+			path = CYM;
+			sourceTree = "<group>";
+		};
+		64C2D91C2BFF70E6009A3EE5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64C2D91D2BFF70E6009A3EE5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64C2D9292BFF7121009A3EE5 /* CYM Sensory Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				64C2D9402BFF7589009A3EE5 /* CYM Sensory Watch App.entitlements */,
+				64C2D93F2BFF744F009A3EE5 /* CYM-Sensory-Watch-App-Info.plist */,
+				64C2D92A2BFF7121009A3EE5 /* CYM_SensoryApp.swift */,
+				64C2D92C2BFF7121009A3EE5 /* ContentView.swift */,
+				64C2D92E2BFF7122009A3EE5 /* Assets.xcassets */,
+				64C2D9302BFF7122009A3EE5 /* Preview Content */,
+				64C2D9452BFF7AB0009A3EE5 /* PhoneConnector.swift */,
+				64C2D9552C04CE57009A3EE5 /* VitalDataCollector.swift */,
+			);
+			path = "CYM Sensory Watch App";
+			sourceTree = "<group>";
+		};
+		64C2D9302BFF7122009A3EE5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64C2D9312BFF7122009A3EE5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64C2D93A2BFF71E3009A3EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64C2D9432BFF7871009A3EE5 /* WatchConnectivity.framework */,
+				64C2D93D2BFF7280009A3EE5 /* HealthKit.framework */,
+				64C2D93B2BFF71E3009A3EE5 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64C2D9122BFF70E5009A3EE5 /* MoodiSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C2D9212BFF70E6009A3EE5 /* Build configuration list for PBXNativeTarget "MoodiSense" */;
+			buildPhases = (
+				64C2D90F2BFF70E5009A3EE5 /* Sources */,
+				64C2D9102BFF70E5009A3EE5 /* Frameworks */,
+				64C2D9112BFF70E5009A3EE5 /* Resources */,
+				64C2D9392BFF7122009A3EE5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C2D9342BFF7122009A3EE5 /* PBXTargetDependency */,
+			);
+			name = MoodiSense;
+			productName = CYM;
+			productReference = 64C2D9132BFF70E5009A3EE5 /* MoodiSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64C2D9272BFF7121009A3EE5 /* CYM Sensory Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C2D9362BFF7122009A3EE5 /* Build configuration list for PBXNativeTarget "CYM Sensory Watch App" */;
+			buildPhases = (
+				64C2D9242BFF7121009A3EE5 /* Sources */,
+				64C2D9252BFF7121009A3EE5 /* Frameworks */,
+				64C2D9262BFF7121009A3EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CYM Sensory Watch App";
+			productName = "CYM Sensory Watch App";
+			productReference = 64C2D9282BFF7121009A3EE5 /* CYM Sensory Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64C2D90B2BFF70E5009A3EE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					64C2D9122BFF70E5009A3EE5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					64C2D9272BFF7121009A3EE5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 64C2D90E2BFF70E5009A3EE5 /* Build configuration list for PBXProject "CYM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64C2D90A2BFF70E5009A3EE5;
+			productRefGroup = 64C2D9142BFF70E5009A3EE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64C2D9122BFF70E5009A3EE5 /* MoodiSense */,
+				64C2D9272BFF7121009A3EE5 /* CYM Sensory Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64C2D9112BFF70E5009A3EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C2D91E2BFF70E6009A3EE5 /* Preview Assets.xcassets in Resources */,
+				64C2D91B2BFF70E6009A3EE5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C2D9262BFF7121009A3EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C2D9322BFF7122009A3EE5 /* Preview Assets.xcassets in Resources */,
+				64C2D92F2BFF7122009A3EE5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64C2D90F2BFF70E5009A3EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C2D9192BFF70E5009A3EE5 /* ContentView.swift in Sources */,
+				64C2D94C2C00D9EB009A3EE5 /* RequestModels.swift in Sources */,
+				64C2D94A2BFF8F7A009A3EE5 /* Secrets.swift in Sources */,
+				64C2D9422BFF7811009A3EE5 /* WatchConnector.swift in Sources */,
+				64C2D9172BFF70E5009A3EE5 /* CYMApp.swift in Sources */,
+				64C2D9482BFF8BBD009A3EE5 /* OpenAIService.swift in Sources */,
+				64C2D94E2C048092009A3EE5 /* ResponseModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C2D9242BFF7121009A3EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C2D94F2C04AB7B009A3EE5 /* OpenAIService.swift in Sources */,
+				64C2D9502C04AB7B009A3EE5 /* Secrets.swift in Sources */,
+				64C2D9512C04AB7B009A3EE5 /* RequestModels.swift in Sources */,
+				64C2D9522C04AB7B009A3EE5 /* ResponseModels.swift in Sources */,
+				64C2D92D2BFF7121009A3EE5 /* ContentView.swift in Sources */,
+				64C2D9562C04CE57009A3EE5 /* VitalDataCollector.swift in Sources */,
+				64C2D92B2BFF7121009A3EE5 /* CYM_SensoryApp.swift in Sources */,
+				64C2D9462BFF7AB0009A3EE5 /* PhoneConnector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64C2D9342BFF7122009A3EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64C2D9272BFF7121009A3EE5 /* CYM Sensory Watch App */;
+			targetProxy = 64C2D9332BFF7122009A3EE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		64C2D91F2BFF70E6009A3EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		64C2D9202BFF70E6009A3EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		64C2D9222BFF70E6009A3EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CYM/CYM.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CYM/Preview Content\"";
+				DEVELOPMENT_TEAM = RAKAC4GCG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MoodiSense-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.CYM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64C2D9232BFF70E6009A3EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CYM/CYM.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CYM/Preview Content\"";
+				DEVELOPMENT_TEAM = RAKAC4GCG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MoodiSense-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.CYM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64C2D9372BFF7122009A3EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CYM Sensory Watch App/CYM Sensory Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CYM Sensory Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = RAKAC4GCG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CYM-Sensory-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CYM Sensory";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = NSHealthCareUsageDescription;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = MK.CYM;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.CYM.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		64C2D9382BFF7122009A3EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CYM Sensory Watch App/CYM Sensory Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CYM Sensory Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = RAKAC4GCG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CYM-Sensory-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CYM Sensory";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = NSHealthCareUsageDescription;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = MK.CYM;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.CYM.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64C2D90E2BFF70E5009A3EE5 /* Build configuration list for PBXProject "CYM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C2D91F2BFF70E6009A3EE5 /* Debug */,
+				64C2D9202BFF70E6009A3EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C2D9212BFF70E6009A3EE5 /* Build configuration list for PBXNativeTarget "MoodiSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C2D9222BFF70E6009A3EE5 /* Debug */,
+				64C2D9232BFF70E6009A3EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C2D9362BFF7122009A3EE5 /* Build configuration list for PBXNativeTarget "CYM Sensory Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C2D9372BFF7122009A3EE5 /* Debug */,
+				64C2D9382BFF7122009A3EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64C2D90B2BFF70E5009A3EE5 /* Project object */;
+}
